@@ -2,7 +2,6 @@
 //   Replace BUCKET_NAME with the bucket name.
 //
 //var albumBucketName = 'BUCKET_NAME';
-var albumBucketName = 'tasaciones-pps-test';
 
 // **DO THIS**:
 //   Replace this block of code with the sample code located at:
@@ -14,11 +13,6 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
     IdentityPoolId: 'IDENTITY_POOL_ID',
 }); */
 
-// Inicializar el proveedor de credenciales de Amazon Cognito
-AWS.config.region = 'us-east-1'; // Región
-AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'us-east-1:9cc3dd8c-6397-4082-a3ee-d99560877e7f',
-});
 
 // Create a new service object
 var s3 = new AWS.S3({
